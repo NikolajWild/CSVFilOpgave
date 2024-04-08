@@ -11,6 +11,7 @@ public class FileHandler {
     public ArrayList<Nøgletal> loadNøgletal() {
         ArrayList<Nøgletal> covidData = new ArrayList();
         Scanner sc = null;
+
         try {
           sc = new Scanner(file, StandardCharsets.ISO_8859_1);
             sc.nextLine();  // Skip første linje

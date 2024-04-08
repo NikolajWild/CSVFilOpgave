@@ -1,4 +1,6 @@
-public class Nøgletal {
+import java.util.Comparator;
+
+public class Nøgletal implements Comparator<Nøgletal> {
     private String region;
     private String aldersGruppe;
     private int bekræftedeTilfældeIAlt;
@@ -59,5 +61,10 @@ public class Nøgletal {
                 ", indlagte=" + indlagte +
                 ", dato='" + dato + '\'';
         return result;
+    }
+
+    @Override
+    public int compare(Nøgletal o1, Nøgletal o2) {
+        return 0;
     }
 }
